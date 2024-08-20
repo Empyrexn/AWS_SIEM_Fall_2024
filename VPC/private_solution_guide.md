@@ -155,7 +155,7 @@ VPC Endpoints allow you to privately connect your VPC to supported AWS services 
 
 1. **Click on the "Routes" tab** and then "Edit routes".
 2. **Add a route**:
-   - **Destination**: `pl-*******` (search s3).
+   - **Destination**: `pl-********` (search s3).
    - **Target**: Copy vpce ID from the S3 gateway and paste it here.
 3. **Click "Save routes"**.
 
