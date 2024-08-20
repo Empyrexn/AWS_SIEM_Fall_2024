@@ -162,11 +162,15 @@ Repeat the process for creating an STS endpoint:
 1. **Service category**: Choose `AWS services`.
 2. **Service Name**: Type `sts` in the search bar and select `com.amazonaws.us-west-1.sts` (make sure to select the correct region).
 
+![Screenshot 2024-08-20 141742](https://github.com/user-attachments/assets/4f85fcfa-d5a5-45bb-bb6c-76be44652244)
+
 #### Configure the STS Endpoint:
 
 1. **VPC**: Select your VPC (`MyCustomVPC`).
 2. **Subnets**: Choose the subnets where the STS endpoint should be available. Typically, you'd select subnets that host resources needing access to STS.
 3. **Security Group**: Select the security group you created earlier or create a new one specifically for this STS endpoint.
+
+![Screenshot 2024-08-20 141946](https://github.com/user-attachments/assets/66d60646-a0cf-400e-82a4-c7eb8dfb0a8e)
 
 #### Policy:
 
