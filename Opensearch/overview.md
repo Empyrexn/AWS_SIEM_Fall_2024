@@ -1,6 +1,3 @@
-Certainly! Here’s a more polished and organized version of the guide for creating a private OpenSearch domain on AWS:
-
----
 
 # Guide to Creating a Private OpenSearch Domain on AWS
 
