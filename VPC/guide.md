@@ -130,7 +130,7 @@ Route tables manage the routing of traffic within your VPC. Follow these steps t
 4. **Create the Route Table**  
    After configuring, click **Create route table**.
 
-![Screenshot 2024-08-20 130805](https://github.com/user-attachments/assets/51b4c4c4-ae6a-42f2-a47b-01636d31513b)
+![Screenshot 2024-08-20 131336](https://github.com/user-attachments/assets/e85dcba8-34ca-47d6-a81f-75e6a12fae8e)
 
 
 5. **Configure Routes:**
@@ -141,12 +141,16 @@ Route tables manage the routing of traffic within your VPC. Follow these steps t
    - **Edit Routes:**  
      Click on the **Routes** tab and then click **Edit routes**.
 
+![Screenshot 2024-08-20 131532](https://github.com/user-attachments/assets/1497f6ae-01a3-431c-afa8-8889cbe1e390)
+
    - **Add a Route:**
      - **Destination:** Enter `0.0.0.0/0` (This route directs all internet traffic).
      - **Target:** Select the Internet Gateway (e.g., `MyInternetGateway`).
 
    - **Save Routes:**  
      Click **Save routes** to apply the changes.
+
+![Screenshot 2024-08-20 131622](https://github.com/user-attachments/assets/0fc2711d-5980-4b8a-b128-35aab67432aa)
 
 6. **Associate the Route Table with a Subnet:**
 
