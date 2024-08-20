@@ -106,3 +106,93 @@ An Internet Gateway enables communication between instances in your VPC and the 
 
 ![Screenshot 2024-08-20 130413](https://github.com/user-attachments/assets/62ed6dd1-4cf8-485a-a808-ad19b740befb)
 
+
+# Step 4: Create a Route Table
+
+Route tables manage the routing of traffic within your VPC. Follow these steps to create and configure a route table:
+
+1. **Navigate to Route Tables**  
+   In the **VPC Dashboard**, click on **Route Tables**.
+
+2. **Create a Route Table**  
+   Click on the **Create route table** button.
+
+
+
+3. **Configure the Route Table:**
+
+   - **Name Tag:**  
+     Assign a name to your route table (e.g., `MyPrivateRouteTable`).
+
+   - **VPC:**  
+     Select your VPC (e.g., `MyBasicVPC`).
+
+4. **Create the Route Table**  
+   After configuring, click **Create route table**.
+
+![Screenshot 2024-08-20 130805](https://github.com/user-attachments/assets/51b4c4c4-ae6a-42f2-a47b-01636d31513b)
+
+
+5. **Configure Routes:**
+
+   - **Select the Route Table:**  
+     Choose the route table you just created.
+
+   - **Edit Routes:**  
+     Click on the **Routes** tab and then click **Edit routes**.
+
+   - **Add a Route:**
+     - **Destination:** Enter `0.0.0.0/0` (This route directs all internet traffic).
+     - **Target:** Select the Internet Gateway (e.g., `MyInternetGateway`).
+
+   - **Save Routes:**  
+     Click **Save routes** to apply the changes.
+
+6. **Associate the Route Table with a Subnet:**
+
+   - **Subnet Associations:**  
+     Click on the **Subnet Associations** tab.
+
+   - **Edit Subnet Associations:**  
+     Click **Edit subnet associations**.
+
+   - **Select Your Subnet:**  
+     Choose the subnet you created earlier (e.g., `MyPublicSubnet`) and click **Save**.
+     
+# Step 5: Create Security Groups
+
+Security Groups act as virtual firewalls to control the traffic allowed to and from your instances. Follow these steps to create and configure a security group:
+
+1. **Navigate to Security Groups**  
+   In the **VPC Dashboard**, click on **Security Groups**.
+
+2. **Create a Security Group**  
+   Click on the **Create security group** button.
+
+3. **Configure the Security Group:**
+
+   - **Name Tag:**  
+     Name your security group (e.g., `MyWebServerSG`).
+
+   - **Description:**  
+     Enter a description (e.g., `Allow HTTP and SSH access`).
+
+   - **VPC:**  
+     Select your VPC (e.g., `MyBasicVPC`).
+
+4. **Configure Inbound Rules:**
+
+   - **Type:** SSH  
+     - **Port:** 22  
+     - **Source:** `0.0.0.0/0` (or restrict to specific IPs).
+
+   - **Type:** HTTP  
+     - **Port:** 80  
+     - **Source:** `0.0.0.0/0`.
+
+   - **Add Rule:**  
+     Click **Add Rule** for each additional rule.
+
+5. **Create the Security Group**  
+   After configuring the rules, click **Create security group**.
+
