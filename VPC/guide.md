@@ -58,9 +58,9 @@ Subnets allow you to segment your VPC into smaller networks. Follow these steps 
 4. **Create the Subnet**  
    After configuring the details, click **Create Subnet**.
 
-5. **(Optional) Create Additional Subnets:**  
-   If needed, repeat the above steps to create additional subnets. For example, you might want to create a private subnet (e.g., `10.0.2.0/24`).
-
+5. **(Optional: see note) Create Additional Subnets:**  
+   If needed, repeat the above steps to create additional subnets. For example, you might want to create a private subnet (e.g., `10.0.2.0/24`). Note Opensearch requires 2 subnets to operate.
+   
 
 
 ![image](https://github.com/user-attachments/assets/11e48c8b-f550-45e8-8605-4a8796f5e0f0)
