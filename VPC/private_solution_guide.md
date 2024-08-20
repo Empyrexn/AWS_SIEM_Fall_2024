@@ -132,20 +132,23 @@ VPC Endpoints allow you to privately connect your VPC to supported AWS services 
 1. **Click on "Endpoints"** in the VPC Dashboard.
 2. **Click on "Create Endpoint"**.
 
+![Screenshot 2024-08-20 141235](https://github.com/user-attachments/assets/a356e3f9-2561-407a-b3e6-f8846248f5bd)
+
+
 #### Choose the Service:
 
 1. **Service category**: Choose `AWS services`.
-2. **Service Name**: Select the service you want to connect to (e.g., `com.amazonaws.us-west-1.s3` for S3).
+2. **Service Name**: Select the service you want to connect to com.amazonaws.us-west-1.s3 for S3 GATEWAY.
 
 #### Configure the Endpoint:
 
 1. **VPC**: Select your VPC (`MyCustomVPC`).
-2. **Subnets**: Select the subnets where you want the endpoint to be available.
-3. **Security Group**: Select the security group you created earlier or create a new one specifically for the endpoint.
+
+![Screenshot 2024-08-20 141347](https://github.com/user-attachments/assets/a369ebc0-ab8b-4125-98e9-eb3130a81ab3)
 
 #### Policy:
 
-1. You can either select `Full Access` or create a custom policy to control which resources within the service can be accessed.
+1. Select `Full Access`
 2. Click **"Create Endpoint"**.
 
 ### Create an Endpoint for STS
