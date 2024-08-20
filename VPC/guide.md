@@ -64,3 +64,4 @@ Subnets allow you to segment your VPC into smaller networks. Follow these steps 
 
 
 ![image](https://github.com/user-attachments/assets/11e48c8b-f550-45e8-8605-4a8796f5e0f0)
+![Screenshot 2024-08-20 125243](https://github.com/user-attachments/assets/6034f262-78ce-4ad4-9b80-aa92342141c5)
