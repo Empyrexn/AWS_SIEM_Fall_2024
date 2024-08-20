@@ -5,8 +5,7 @@
 Start by navigating to the `.aws` directory where your AWS CLI configuration files (`config` and `credentials`) are stored.
 
 ```bash
-cd ~
-cd .aws
+cd ~/.aws
 ```
 
 ## Step 2: View the Current Configuration
