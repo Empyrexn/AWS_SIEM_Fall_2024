@@ -148,8 +148,18 @@ VPC Endpoints allow you to privately connect your VPC to supported AWS services 
 
 #### Policy:
 
-1. Select `Full Access`
+1. Select Full Access.
 2. Click **"Create Endpoint"**.
+
+### Attaching Gateway:
+
+1. **Click on the "Routes" tab** and then "Edit routes".
+2. **Add a route**:
+   - **Destination**: `pl-*******` (search s3).
+   - **Target**: Copy vpce ID from the S3 gateway and paste it here.
+3. **Click "Save routes"**.
+
+![Screenshot 2024-08-20 142129](https://github.com/user-attachments/assets/303fc549-b6db-46b7-9ae1-3a965741ec34)
 
 ### Create an Endpoint for STS
 
@@ -174,5 +184,5 @@ Repeat the process for creating an STS endpoint:
 
 #### Policy:
 
-1. Similar to other endpoints, you can choose `Full Access` or create a custom policy depending on your security requirements.
+1. Choose Full Access.
 2. Click **"Create Endpoint"**.
