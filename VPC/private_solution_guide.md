@@ -82,17 +82,46 @@ Security Groups control the inbound and outbound traffic to your resources.
    - **Description**: Enter a description (e.g., `Allow HTTP and SSH traffic`).
    - **VPC**: Select your VPC (`MyCustomVPC`).
 
+![Screenshot 2024-08-20 140937](https://github.com/user-attachments/assets/233d9892-224d-436b-a12b-000444c1f51f)
+
+## 1 of 4: EC2-SecurityGroup
+
 ### Configure Inbound Rules:
 
-1. **Type**: `SSH (port 22)`, **Source**: `0.0.0.0/0` (or restrict to specific IPs for security).
-2. **Type**: `HTTP (port 80)`, **Source**: `0.0.0.0/0`.
-3. **Add any additional rules** as necessary.
+1. **Type**: `SSH (port 22)`, **Source**: `0.0.0.0/0` (restrict to specific IPs for security ex local ip).
+2. **Type**: `HTTPS (port 443)`, **Source**: `0.0.0.0/0`(restrict to Opensearch-SecurityGroup sg-id)
 
 ### Configure Outbound Rules:
 
-- By default, all outbound traffic is allowed. You can leave this as is or restrict it based on your needs.
+1. **Type**: `HTTPS (port 443)`, **Source**: `0.0.0.0/0`.
+2. **Type**: `DNS (port 53)`, **Source**: `0.0.0.0/0`.
 
-4. **Click "Create security group"**.
+## 2 of 4: Endpoint-SecurityGroup
+
+### Configure Inbound Rules:
+
+1. **Type**: `ALL TRAFFIC (port ALL)`, **Source**: `0.0.0.0/0` (or restrict to specific IPs for security).
+
+### Configure Outbound Rules:
+
+1. **Type**: `ALL TRAFFIC (port ALL)`, **Source**: `0.0.0.0/0` (or restrict to specific IPs for security).
+
+## 3 of 4: Opensearch-SecurityGroup
+
+### Configure Inbound Rules:
+
+1. **Type**: `ALL TRAFFIC (port ALL)`, **Source**: `sg-EC2-SecurityGroup.id`.
+
+## 4 of 4: OpensearchPipeline-SecurityGroup
+
+### Configure Inbound Rules:
+
+1. **Type**: `ALL TRAFFIC (port ALL)`, **Source**: `sg-EC2-SecurityGroup.id`.
+
+### Configure Outbound Rules:
+
+1. **Type**: `ALL TRAFFIC (port ALL)`, **Source**: `0.0.0.0/0` (or restrict to specific IPs for security).
+
 
 ## Step 5: Create VPC Endpoints
 
