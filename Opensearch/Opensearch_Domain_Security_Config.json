@@ -7,15 +7,15 @@
         "AWS": "*"
       },
       "Action": "es:*",
-      "Resource": "arn:aws:es:us-west-1:user-arn:domain/domain-name/*"
+      "Resource": "arn:aws:es:<your-region>:<your-account-id>:domain/<your-domain-name>/*"
     },
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::user-arn:role/IAM-role"
+        "AWS": "arn:aws:iam::<your-account-id>:role/<your-iam-role>"
       },
       "Action": "es:*",
-      "Resource": "arn:aws:es:us-west-1:user-arn:domain/domain-name/*"
+      "Resource": "arn:aws:es:<your-region>:<your-account-id>:domain/<your-domain-name>/*"
     }
   ]
 }
