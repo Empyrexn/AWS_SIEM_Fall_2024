@@ -48,7 +48,7 @@ Route tables define how traffic is routed within your VPC.
 1. **Click on "Route Tables"** in the VPC Dashboard.
 2. **Click on "Create route table"**.
 3. **Configure the Route Table**:
-   - **Name Tag**: Name your route table (e.g., `MyPublicRouteTable`).
+   - **Name Tag**: Name your route table (e.g., `MyPrivateRouteTable`).
    - **VPC**: Select your VPC (`MyCustomVPC`).
 4. **Click "Create route table"**.
 
@@ -65,7 +65,7 @@ Route tables define how traffic is routed within your VPC.
 
 1. **Click on the "Subnet Associations" tab**.
 2. **Click "Edit subnet associations"**.
-3. **Select the subnet** you want to associate with this route table (e.g., `MyPublicSubnet`) and click "Save".
+3. **Select the subnet** you want to associate with this route table (e.g., `MyPrivateSubnet`) and click "Save".
 
 ## Step 4: Create Security Groups
 
