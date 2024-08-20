@@ -1,3 +1,6 @@
+# Setting Up Fluent Bit on EC2 to Process Logs from S3 and Send to OpenSearch
+
+This guide will walk you through installing Fluent Bit on an EC2 instance, configuring it to process logs from an S3 bucket, and sending the logs to an OpenSearch Ingestion pipeline.
 
 ## Step 1: Install Fluent Bit on EC2
 
