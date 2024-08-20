@@ -1,5 +1,3 @@
-Here’s a guide to changing the STS endpoint and other AWS configuration settings for your `default` and `my-profile` profiles:
-
 # Guide to Updating STS Endpoint in AWS CLI Configuration
 
 ## Step 1: Navigate to the `.aws` Directory
