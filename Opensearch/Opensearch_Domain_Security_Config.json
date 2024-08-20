@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": "es:*",
+      "Resource": "arn:aws:es:us-west-1:user-arn:domain/domain-name/*"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::user-arn:role/IAM-role"
+      },
+      "Action": "es:*",
+      "Resource": "arn:aws:es:us-west-1:user-arn:domain/domain-name/*"
+    }
+  ]
+}
