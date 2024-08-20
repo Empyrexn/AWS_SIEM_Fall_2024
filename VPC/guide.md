@@ -179,13 +179,15 @@ Security Groups act as virtual firewalls to control the traffic allowed to and f
 3. **Configure the Security Group:**
 
    - **Name Tag:**  
-     Name your security group (e.g., `MyWebServerSG`).
+     Name your security group (e.g., `EC2_Security_Group`).
 
    - **Description:**  
-     Enter a description (e.g., `Allow HTTP and SSH access`).
+     Enter a description (e.g., `Allow HTTPs and SSH access`).
 
    - **VPC:**  
      Select your VPC (e.g., `MyBasicVPC`).
+
+![Screenshot 2024-08-20 132138](https://github.com/user-attachments/assets/2e151cf3-4759-4c41-b093-74f35afc00e0)
 
 4. **Configure Inbound Rules:**
 
@@ -193,13 +195,17 @@ Security Groups act as virtual firewalls to control the traffic allowed to and f
      - **Port:** 22  
      - **Source:** `0.0.0.0/0` (or restrict to specific IPs).
 
-   - **Type:** HTTP  
-     - **Port:** 80  
-     - **Source:** `0.0.0.0/0`.
+   - **Type:** HTTPS  
+     - **Port:** 443  
+     - **Source:** `0.0.0.0/0` (or restrict to specific IPs)
 
    - **Add Rule:**  
      Click **Add Rule** for each additional rule.
 
+![Screenshot 2024-08-20 132240](https://github.com/user-attachments/assets/a90166b7-470c-4c3c-8bac-49a8ac8b8570)
+
+
 5. **Create the Security Group**  
    After configuring the rules, click **Create security group**.
+
 
