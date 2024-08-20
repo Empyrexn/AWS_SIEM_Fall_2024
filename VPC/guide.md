@@ -103,3 +103,6 @@ An Internet Gateway enables communication between instances in your VPC and the 
 
    - **Select Your VPC:**  
      Choose your VPC (e.g., `MyBasicVPC`) and click **Attach Internet Gateway**.
+
+![Screenshot 2024-08-20 130413](https://github.com/user-attachments/assets/62ed6dd1-4cf8-485a-a808-ad19b740befb)
+
