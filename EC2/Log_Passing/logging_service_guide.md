@@ -1,4 +1,4 @@
-# Setting Up a Python Script as a Systemd Service on an EC2 Instance
+# Setting Up a Python Script as a Systemd Service
 
 ## Step 1: Prepare the Script
 First, make sure the script is executable and saved in a directory on your EC2 instance. For this example, let's assume the script is saved as `/usr/local/bin/s3_log_service.py`.
