@@ -208,4 +208,5 @@ Security Groups act as virtual firewalls to control the traffic allowed to and f
 5. **Create the Security Group**  
    After configuring the rules, click **Create security group**.
 
+![Screenshot 2024-08-20 132615](https://github.com/user-attachments/assets/401a2d26-fbfc-4dca-b5a0-7f12586291f7)
 
