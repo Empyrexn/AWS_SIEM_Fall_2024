@@ -54,7 +54,7 @@ Route tables define how traffic is routed within your VPC.
 
 ![Screenshot 2024-08-20 135329](https://github.com/user-attachments/assets/a674f05a-d47a-4bc4-9b72-ed31e2fb5878)
 
-### Add Internet For EC2 setup Remove After Completion:
+### Add Internet For EC2 setup Remove after setup Completion:
 
 1. **Select the route table** you just created.
 2. **Click on the "Routes" tab** and then "Edit routes".
