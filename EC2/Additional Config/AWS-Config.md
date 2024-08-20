@@ -1,6 +1,3 @@
-
-Here's a guide on how to configure AWS CLI on an Amazon Linux 2 instance:
-
 # Configuring AWS CLI on Amazon Linux 2
 
 ## Step 1: Install the AWS CLI
