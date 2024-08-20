@@ -82,7 +82,11 @@
 2. Note the **Public IP** or **Public DNS** of your instance.
 3. Use an SSH client to connect to your instance (for Linux) or RDP (for Windows).
 
+![image](https://github.com/user-attachments/assets/27801568-ebda-480d-a5ae-80ffa86fe8cb)
+
 ## Step 7: Terminate the Instance (Optional)
 1. If you no longer need the instance, go to the **Instances** section.
 2. Select the instance, click on **Actions**, then **Instance State** > **Terminate**.
 3. Confirm the termination.
+
+![image](https://github.com/user-attachments/assets/d51781cd-9517-4ee6-b4e1-fd7feef4c51e)
