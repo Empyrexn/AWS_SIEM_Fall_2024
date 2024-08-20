@@ -162,6 +162,9 @@ Route tables manage the routing of traffic within your VPC. Follow these steps t
 
    - **Select Your Subnet:**  
      Choose the subnet you created earlier (e.g., `MyPublicSubnet`) and click **Save**.
+
+![Screenshot 2024-08-20 131811](https://github.com/user-attachments/assets/27ef7a3f-114a-4bfb-b4d0-4c1ba90b2b17)
+
      
 # Step 5: Create Security Groups
 
