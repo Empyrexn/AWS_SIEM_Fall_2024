@@ -122,7 +122,7 @@ Route tables manage the routing of traffic within your VPC. Follow these steps t
 3. **Configure the Route Table:**
 
    - **Name Tag:**  
-     Assign a name to your route table (e.g., `MyPrivateRouteTable`).
+     Assign a name to your route table (e.g., `MyPublicRouteTable`).
 
    - **VPC:**  
      Select your VPC (e.g., `MyBasicVPC`).
