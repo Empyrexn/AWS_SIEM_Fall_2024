@@ -12,20 +12,34 @@
    - **Tenancy**: Choose `Default` unless you require dedicated hardware for instances in this VPC.
 5. **Click "Create VPC"** to create the VPC.
 
+![Screenshot 2024-08-20 133825](https://github.com/user-attachments/assets/17f0fa59-2862-4a8e-9329-3c48ec13e304)
+
+
 ## Step 2: Create Subnets
 
 Subnets divide the VPC's IP address range into smaller networks.
 
 1. **Click on "Subnets"** in the VPC Dashboard.
 2. **Click on "Create Subnet"**.
-3. **Configure the First Subnet (e.g., Public Subnet)**:
-   - **Name Tag**: Name your subnet (e.g., `MyPublicSubnet`).
+
+![Screenshot 2024-08-20 134051](https://github.com/user-attachments/assets/efad397e-2162-4288-a1f5-caa493009d91)
+
+3. **Configure the First Subnet (e.g., Private Subnet)**:
+   - **Name Tag**: Name your subnet (e.g., `MyPrivateSubnet1`).
    - **VPC**: Select the VPC you created (`MyCustomVPC`).
    - **Availability Zone**: Choose an availability zone (e.g., `us-west-1a`).
-   - **IPv4 CIDR block**: Enter a subnet IP range within your VPC (e.g., `10.0.1.0/24`).
-4. **Click "Create Subnet"**.
-5. **Create Additional Subnets (e.g., Private Subnet)**:
-   - Repeat the above steps to create additional subnets (e.g., `MyPrivateSubnet` in `10.0.2.0/24`).
+   - **IPv4 CIDR block**: Enter a subnet IP range within your VPC (e.g., `10.0.0.0/25`).
+
+![Screenshot 2024-08-20 134157](https://github.com/user-attachments/assets/2f7966e1-90df-45cb-b326-332d11c73926)
+
+4. **Configure the Second Subnet (e.g., Private Subnet)**:
+   - **Name Tag**: Name your subnet (e.g., `MyPrivateSubnet2`).
+   - **VPC**: Select the VPC you created (`MyCustomVPC`).
+   - **Availability Zone**: Choose an availability zone (e.g., `us-west-1a`).
+   - **IPv4 CIDR block**: Enter a subnet IP range within your VPC (e.g., `10.0.0.128/25`).
+   - **Click "Create Subnet"**.
+
+![Screenshot 2024-08-20 135103](https://github.com/user-attachments/assets/86a050e0-1f75-4f62-824b-70ea6a649c17)
 
 ## Step 3: Create a Route Table
 
