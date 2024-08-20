@@ -52,13 +52,15 @@ Route tables define how traffic is routed within your VPC.
    - **VPC**: Select your VPC (`MyCustomVPC`).
 4. **Click "Create route table"**.
 
-### Add a Route to the Route Table:
+![Screenshot 2024-08-20 135329](https://github.com/user-attachments/assets/a674f05a-d47a-4bc4-9b72-ed31e2fb5878)
+
+### Add Internet For EC2 setup Remove After Completion:
 
 1. **Select the route table** you just created.
 2. **Click on the "Routes" tab** and then "Edit routes".
 3. **Add a route**:
    - **Destination**: `0.0.0.0/0` (This sends all outbound traffic to the internet).
-   - **Target**: If you have an Internet Gateway, select it here.
+   - **Target**: Create an Internet Gateway then select it here.
 4. **Click "Save routes"**.
 
 ### Associate the Route Table with a Subnet:
