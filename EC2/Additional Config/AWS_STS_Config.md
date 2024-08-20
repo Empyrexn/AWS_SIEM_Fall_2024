@@ -21,11 +21,6 @@ This will display something like:
 ```plaintext
 [default]
 region = us-west-1
-
-[profile my-profile]
-region = us-west-1
-sts_regional_endpoints = regional
-endpoint_url = https://vpce-04d9e4dc750078c2b-s9cm8r83.sts.us-west-1.vpce.amazonaws.com
 ```
 
 ## Step 3: Edit the Configuration File
@@ -47,8 +42,6 @@ If you want to update the STS endpoint URL and ensure both profiles use the regi
 ```plaintext
 [default]
 region = us-west-1
-sts_regional_endpoints = regional
-endpoint_url = https://vpce-04d9e4dc750078c2b-s9cm8r83.sts.us-west-1.vpce.amazonaws.com
 
 [profile my-profile]
 region = us-west-1
