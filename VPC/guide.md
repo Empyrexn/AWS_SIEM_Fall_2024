@@ -55,16 +55,17 @@ Subnets allow you to segment your VPC into smaller networks. Follow these steps 
    - **IPv4 CIDR Block:**  
      Specify a smaller range within your VPC's range (e.g., `10.0.1.0/24` for a public subnet).
 
-4. **Create the Subnet**  
-   After configuring the details, click **Create Subnet**.
-
-5. **(Optional: see note) Create Additional Subnets:**  
+4. **(Optional: see note) Create Additional Subnets:**  
    If needed, repeat the above steps to create additional subnets. For example, you might want to create a private subnet (e.g., `10.0.2.0/24`). Note Opensearch requires 2 subnets to operate.
    
 
 
 ![image](https://github.com/user-attachments/assets/11e48c8b-f550-45e8-8605-4a8796f5e0f0)
 ![Screenshot 2024-08-20 125243](https://github.com/user-attachments/assets/6034f262-78ce-4ad4-9b80-aa92342141c5)
+
+5. **Create the Subnet**  
+   After configuring the details, click **Create Subnet**.
+   
 ![Screenshot 2024-08-20 130202](https://github.com/user-attachments/assets/9c444062-4256-4a3d-88f7-fca223b94a4d)
 
 
