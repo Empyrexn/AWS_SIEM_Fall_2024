@@ -115,4 +115,3 @@ sudo journalctl -u fluent-bit -f
 ## Summary
 
 With this setup, Fluent Bit will process logs from your specified S3 bucket, filter them, and send them to your OpenSearch ingestion pipeline. This setup can be customized further based on your specific requirements.
-```
