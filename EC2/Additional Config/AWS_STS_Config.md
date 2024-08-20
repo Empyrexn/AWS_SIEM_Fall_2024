@@ -14,7 +14,6 @@ cd .aws
 List the files in the `.aws` directory and view the current `config` file to understand the existing settings.
 
 ```bash
-ls
 cat config
 ```
 
