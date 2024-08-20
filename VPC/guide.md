@@ -17,7 +17,7 @@ To create a VPC, follow these steps:
      Provide a name for your VPC (e.g., `MyBasicVPC`).
 
    - **IPv4 CIDR Block:**  
-     Enter an IP range (e.g., `10.0.0.0/16`) or leave blank and AWS will autofill. This defines the IP address range for your VPC.
+     Enter an IP range (e.g., `10.0.0.0/16`). This defines the IP address range for your VPC.
 
    - **IPv6 CIDR Block:**  
      Leave this as **No IPv6 CIDR Block** unless you require IPv6.
