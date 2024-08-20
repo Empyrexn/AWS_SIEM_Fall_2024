@@ -71,7 +71,7 @@ sudo systemctl disable s3_log_service
 
 
 
-```markdown
+
 # Setting Up a Python Script as a Systemd Service on an EC2 Instance
 
 ## Step 1: Prepare the Script
