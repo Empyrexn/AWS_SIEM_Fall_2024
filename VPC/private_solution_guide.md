@@ -69,6 +69,8 @@ Route tables define how traffic is routed within your VPC.
 2. **Click "Edit subnet associations"**.
 3. **Select the subnet** you want to associate with this route table (e.g., `MyPrivateSubnet`) and click "Save".
 
+![Screenshot 2024-08-20 135708](https://github.com/user-attachments/assets/fa5cee5a-0457-4c8c-a5be-f55d5bd77100)
+
 ## Step 4: Create Security Groups
 
 Security Groups control the inbound and outbound traffic to your resources.
