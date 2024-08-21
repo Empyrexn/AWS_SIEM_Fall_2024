@@ -126,3 +126,16 @@ Ensure that your EC2 instances or other AWS resources can access the private Ope
 
 - **Use CloudWatch**: Monitor the health and performance of your OpenSearch domain using Amazon CloudWatch.
 - **Review Security**: Regularly review security settings and access policies to ensure they align with your security requirements.
+
+## **Step 8: Access Opensearch Domain**
+   -Creating a ssh tunnel into the Opensearch Domain by setting up a bastion host in the EC2 instance
+```bash
+ssh -i "path-to/your-key-file.pem" -L local_port:opensearch_endpoint:opensearch_port -o IdentitiesOnly=yes ec2-user@your-ec2-public-ip
+```
+
+   -Browser link set up by bastion host
+```text
+https://localhost:9200/_dashboards/app/home#/
+
+```
+   -
