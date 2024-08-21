@@ -80,10 +80,31 @@ With your VPC, subnets, and security groups ready, you can now create the OpenSe
 ![Screenshot 2024-08-21 080619](https://github.com/user-attachments/assets/b9622236-4ecf-48b7-8a5c-97a4f0e1b4d6)
 
 6. **Access Policy**:
-   - Choose **Fine-grained access control** if you want to manage access to the domain through IAM roles.
+   - Choose **Configure domain level access policy** to manage access to the domain through Domain restrictions.
 
-![Screenshot 2024-08-21 080748](https://github.com/user-attachments/assets/dc905f92-3c94-4f23-b9c1-ff0b07c226cc)
-
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": "es:*",
+      "Resource": "arn:aws:es:<your-region>:<your-account-id>:domain/<your-domain-name>/*"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::<your-account-id>:role/<your-iam-role>"
+      },
+      "Action": "es:*",
+      "Resource": "arn:aws:es:<your-region>:<your-account-id>:domain/<your-domain-name>/*"
+    }
+  ]
+}
+```
 
 7. **Create the Domain**:
    - Review the configuration and click **Create**.
@@ -122,18 +143,7 @@ Ensure that your EC2 instances or other AWS resources can access the private Ope
    curl -XGET https://<your-opensearch-endpoint> -u 'username:password'
    ```
 
-## **Step 7: Security Config**
-   -Now that the Domain is ready the security config can be edited
-   -Click on your new domains name within the domain dashboard on AWS Opensearch Service
-![Screenshot 2024-08-21 083933](https://github.com/user-attachments/assets/6f0a1165-7bab-47df-8da4-d9c3a74d80b6)
-   -Click on Security Configuration beneath the General Information tab
-![Screenshot 2024-08-21 084000](https://github.com/user-attachments/assets/1baeef9e-e6b8-4f87-892c-7083537dd74d)
-   -Click edit
-![Screenshot 2024-08-21 084021](https://github.com/user-attachments/assets/4e3794db-777e-4491-b3fd-70b4ebebc1b9)
-
-
-
-## **Step 8: Access Opensearch Domain**
+## **Step 7: Access Opensearch Domain**
    -Creating a ssh tunnel into the Opensearch Domain by setting up a bastion host in the EC2 instance
 ```bash
 ssh -i "path-to/your-key-file.pem" -L local_port:opensearch_endpoint:opensearch_port -o IdentitiesOnly=yes ec2-user@your-ec2-public-ip
