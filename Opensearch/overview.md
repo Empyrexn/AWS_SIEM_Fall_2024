@@ -57,27 +57,40 @@ With your VPC, subnets, and security groups ready, you can now create the OpenSe
 
 1. **Go to the OpenSearch Service Console**:
    - Visit the [Amazon OpenSearch Service Console](https://console.aws.amazon.com/es/).
-  
-2. **Start Domain Creation**:
+
+2. **Configure Domain Settings**:
+   - **Domain name**: Enter a name for your domain.
+
+![Screenshot 2024-08-21 080442](https://github.com/user-attachments/assets/fcbf0b8a-9cac-437b-bc90-942b3b8487c6)
+
+3. **Start Domain Creation**:
    - Click **Create domain**.
    - Choose **Deployment type**: Select **Production** for a private domain.
 
-3. **Configure Domain Settings**:
-   - **Domain name**: Enter a name for your domain.
-  
-4. **Network Configuration**:
+![Screenshot 2024-08-21 080510](https://github.com/user-attachments/assets/19a58e8d-c977-44db-a63b-8b2d393ee074)
+
+4. **Data Nodes**:
+   - Configure the domain’s instance type, storage, and other settings according to your needs.
+
+5. **Network Configuration**:
    - **VPC**: Select the VPC you created.
    - **Subnets**: Select the subnets where your domain will reside.
    - **Security groups**: Select the security group created earlier.
 
-5. **Access Policy**:
+![Screenshot 2024-08-21 080619](https://github.com/user-attachments/assets/b9622236-4ecf-48b7-8a5c-97a4f0e1b4d6)
+
+6. **Access Policy**:
    - Choose **Fine-grained access control** if you want to manage access to the domain through IAM roles.
 
-6. **Domain Resources**:
-   - Configure the domain’s instance type, storage, and other settings according to your needs.
+![Screenshot 2024-08-21 080748](https://github.com/user-attachments/assets/dc905f92-3c94-4f23-b9c1-ff0b07c226cc)
+
 
 7. **Create the Domain**:
    - Review the configuration and click **Create**.
+   - Note Opensearch Domain clusters do take 15 min+
+
+![Screenshot 2024-08-21 081443](https://github.com/user-attachments/assets/7a2d04d7-a524-4340-8278-4a4c040e5eee)
+
 
 ## **Step 5: Configure Access to the Domain**
 
@@ -97,10 +110,7 @@ Ensure that your EC2 instances or other AWS resources can access the private Ope
      ]
    }
    ```
-
-2. **Optional: Create a VPC Endpoint**:
-   - For additional security, create a VPC endpoint for Amazon OpenSearch Service within your VPC to privately connect to OpenSearch without using the public internet.
-
+   
 ## **Step 6: Test the OpenSearch Domain**
 
 1. **Access from EC2**:
