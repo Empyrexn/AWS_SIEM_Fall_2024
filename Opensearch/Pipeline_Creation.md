@@ -72,6 +72,3 @@ log-pipeline:
 ## Conclusion
 
 By following this guide, you have successfully set up an AWS OpenSearch pipeline for processing Apache logs, converting them into metrics, and detecting anomalies.
-```
-
-This format should now display properly in the GitHub preview mode. If you encounter any further issues, please let me know!
