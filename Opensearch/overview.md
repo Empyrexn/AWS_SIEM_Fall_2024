@@ -116,12 +116,3 @@ Ensure that your EC2 instances or other AWS resources can access the private Ope
 
 - **Use CloudWatch**: Monitor the health and performance of your OpenSearch domain using Amazon CloudWatch.
 - **Review Security**: Regularly review security settings and access policies to ensure they align with your security requirements.
-
----
-
-### **Conclusion**
-Creating a private OpenSearch domain involves setting up a secure network environment, configuring access controls, and managing the domain’s resources. By following this guide, you can establish a private, secure, and scalable OpenSearch environment tailored to your specific needs.
-
---- 
-
-This organized structure provides clear, step-by-step instructions to guide you through the process of creating a private OpenSearch domain on AWS.
