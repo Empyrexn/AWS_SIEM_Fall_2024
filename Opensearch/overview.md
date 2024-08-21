@@ -133,9 +133,11 @@ Ensure that your EC2 instances or other AWS resources can access the private Ope
 ssh -i "path-to/your-key-file.pem" -L local_port:opensearch_endpoint:opensearch_port -o IdentitiesOnly=yes ec2-user@your-ec2-public-ip
 ```
 
-   -Browser link set up by bastion host
+   -Browser link to access Opensearch Dashboards
 ```text
 https://localhost:9200/_dashboards/app/home#/
 
 ```
-   -
+
+![Screenshot 2024-08-21 083210](https://github.com/user-attachments/assets/f1b5d695-27d3-49d1-a365-ad435b215b5c)
+
