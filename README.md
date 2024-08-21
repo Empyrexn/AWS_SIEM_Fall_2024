@@ -39,4 +39,3 @@ This project focuses on the creation of a robust and scalable log ingestion pipe
 
 ## Conclusion
 This project demonstrates the integration of key AWS services to build a secure and scalable log ingestion pipeline that supports real-time security analytics. By combining S3, EC2, Fluent Bit, OpenSearch, and OpenSearch Dashboards, the pipeline provides a comprehensive solution for monitoring and analyzing security-related events, helping organizations detect and respond to potential threats more effectively.
-# AWS_SIEM_Fall_2024
