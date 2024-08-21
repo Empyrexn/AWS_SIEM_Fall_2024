@@ -24,81 +24,27 @@ Below is an example pipeline configuration:
 
 ```yaml
 version: "2"
-
-apache-log-pipeline-with-metrics:
+log-pipeline:
   source:
     http:
-      path: "/${pipelineName}/logs"
+      path: "/syslog-pipeline/logs"
   processor:
     - grok:
         match:
-          log: [ "%{COMMONAPACHELOG_DATATYPED}" ]
+          log: [ "%{SYSLOGBASE}" ]
   sink:
     - opensearch:
-        hosts: [ "https://search-mydomain-xxxxxxxxxx.us-east-1.es.amazonaws.com" ]
+        hosts: [ "https://<your-opensearch-endpoint>" ]
         aws:
-          sts_role_arn: "arn:aws:iam::123456789012:role/Example-Role"
-          region: "us-east-1"
+          sts_role_arn: "arn:aws:iam::<your-account-id>:role/<your-iam-role>"
+          region: "<your-region>"
           serverless: false
-        index: "logs"
+        index: "<your-index-name>"
         dlq:
           s3:
-            bucket: "your-dlq-bucket-name"
-            region: "us-east-1"
-            sts_role_arn: "arn:aws:iam::123456789012:role/Example-Role"
-    - pipeline:
-        name: "log-to-metrics-pipeline"
-
-log-to-metrics-pipeline:
-  source:
-    pipeline:
-      name: "apache-log-pipeline-with-metrics"
-  processor:
-    - aggregate:
-        identification_keys: ["clientip", "request"]
-        action:
-          histogram:
-            key: "bytes"
-            record_minmax: true
-            units: "bytes"
-            buckets: [0, 25000000, 50000000, 75000000, 100000000]
-        group_duration: "30s"
-  sink:
-    - opensearch:
-        hosts: [ "https://search-mydomain-xxxxxxxxxx.us-east-1.es.amazonaws.com" ]
-        aws:
-          sts_role_arn: "arn:aws:iam::123456789012:role/Example-Role"
-          region: "us-east-1"
-          serverless: false
-        index: "histogram_metrics"
-        dlq:
-          s3:
-            bucket: "your-dlq-bucket-name"
-            region: "us-east-1"
-            sts_role_arn: "arn:aws:iam::123456789012:role/Example-Role"
-    - pipeline:
-        name: "log-to-metrics-anomaly-detector-pipeline"
-
-log-to-metrics-anomaly-detector-pipeline:
-  source:
-    pipeline:
-      name: "log-to-metrics-pipeline"
-  processor:
-    - anomaly_detector:
-        keys: ["max"]
-  sink:
-    - opensearch:
-        hosts: [ "https://search-mydomain-xxxxxxxxxx.us-east-1.es.amazonaws.com" ]
-        aws:
-          sts_role_arn: "arn:aws:iam::123456789012:role/Example-Role"
-          region: "us-east-1"
-          serverless: false
-        index: "log-metric-anomalies"
-        dlq:
-          s3:
-            bucket: "your-dlq-bucket-name"
-            region: "us-east-1"
-            sts_role_arn: "arn:aws:iam::123456789012:role/Example-Role"
+            bucket: "<your-s3-bucket>"
+            region: "<your-region>"
+            sts_role_arn: "arn:aws:iam::<your-account-id>:role/<your-iam-role>"
 ```
 
 ### Configuration Breakdown
