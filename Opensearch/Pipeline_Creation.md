@@ -59,10 +59,14 @@ log-pipeline:
 2. **Create a new pipeline** and upload your YAML configuration file.
 3. **Deploy** the pipeline by following the prompts.
 
+![image](https://github.com/user-attachments/assets/5b89da60-85a4-4cc9-938c-079defe45d43)
+
 ## Step 5: Test the Pipeline
 
 1. **Send test logs** to your pipeline’s HTTP endpoint.
 2. **Verify** that logs are ingested, processed, and anomalies are detected by checking your OpenSearch Dashboards.
+
+![image](https://github.com/user-attachments/assets/1772e0f8-f424-4705-96c7-bd6495178519)
 
 ## Step 6: Monitor and Maintain
 
