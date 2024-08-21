@@ -1,11 +1,3 @@
-It seems that the preview is showing an extra code block, likely due to the Markdown being misinterpreted. To correct this, I’ll remove the unnecessary code block wrapping that may have been causing the issue.
-
-Here is the corrected Markdown content that should display properly in GitHub:
-
-```markdown
-# How to Create an AWS OpenSearch Logs-to-Metrics Anomaly Detection Pipeline
-
-This guide will walk you through creating an AWS OpenSearch pipeline that processes Apache logs, converts them into metrics, and detects anomalies.
 
 ## Step 1: Set Up AWS OpenSearch Domain
 
