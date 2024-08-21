@@ -3,7 +3,7 @@
 
 This guide walks you through the steps to create a private OpenSearch domain, ensuring that it is accessible only within your Amazon Virtual Private Cloud (VPC), enhancing security by restricting public access.
 
-## **Step 1: Create a VPC**
+## **Step 1: Create a Private VPC (No Internet Gateway Routed)**
 
 Before setting up a private OpenSearch domain, ensure you have a VPC where the domain will reside.
 
