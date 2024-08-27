@@ -3,7 +3,7 @@
 ## Overview
 This project focuses on the creation of a robust and scalable log ingestion pipeline designed to facilitate security analytics. The pipeline captures logs from Amazon S3, processes them using Fluent Bit hosted on EC2 instances, and then indexes them into OpenSearch for real-time analysis through OpenSearch Dashboards. The primary goal is to build an infrastructure that enables efficient log collection, processing, and security monitoring, ensuring that potential security threats can be detected and analyzed in a timely manner.
 
-![Screenshot 2024-08-21 103103](https://github.com/user-attachments/assets/26c4d74e-a44c-48c9-9482-11b52e5e710d)
+![image](https://github.com/user-attachments/assets/3bdf61d8-994a-4057-a2f7-15b954505a1b)
 
 ## Key Components
 
